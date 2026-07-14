@@ -51,6 +51,7 @@ Apache Web Server
       ▼
 index.html
 ```
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/5d2644b9-8782-4200-9a84-abb867008853" />
 
 ---
 
