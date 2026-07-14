@@ -1,0 +1,128 @@
+#ARCHITECTURE DIAGRAM
+
+AWS EC2 APACHE WEB SERVER DEPLOYMENT
+ARCHITECTURE DESCRIPTION
+
+PROJECT OVERVIEW
+----------------
+This project demonstrates the deployment of a Linux-based web server on Amazon Web Services (AWS) using an EC2 instance running Ubuntu Linux. Apache HTTP Server is installed and configured to host a custom HTML webpage that is accessible through the internet using the instance's Public IPv4 Address.
+
+ARCHITECTURE COMPONENTS
+-----------------------
+
+1. USER / CLIENT
+   - End users access the website through a web browser.
+   - Requests are sent over the internet using the EC2 Public IP Address.
+
+2. INTERNET
+   - Acts as the communication medium between users and the AWS cloud infrastructure.
+
+3. AWS CLOUD
+   - Provides the cloud environment where the virtual server is deployed.
+
+4. AMAZON EC2 INSTANCE
+   - Instance Type: t3.micro
+   - Operating System: Ubuntu Linux
+   - Functions as the virtual server hosting the website.
+
+5. SECURITY GROUP
+   - Acts as a virtual firewall.
+   - Inbound Rules:
+       • SSH (Port 22)
+       • HTTP (Port 80)
+   - Controls incoming traffic to the EC2 instance.
+
+6. APACHE HTTP SERVER
+   - Installed on Ubuntu Linux.
+   - Processes incoming HTTP requests.
+   - Serves website content to users.
+
+7. WEB APPLICATION
+   - Custom HTML webpage stored in:
+     /var/www/html/index.html
+   - Displayed when users access the server's public IP.
+
+8. PUBLIC IPv4 ADDRESS
+   - Provides internet accessibility.
+   - Maps user requests to the EC2 instance.
+
+WORKFLOW
+--------
+
+Step 1:
+User launches an Ubuntu EC2 Instance on AWS.
+
+Step 2:
+Security Group is configured to allow:
+- SSH Traffic (Port 22)
+- HTTP Traffic (Port 80)
+
+Step 3:
+User connects to the EC2 instance using SSH.
+
+Step 4:
+System packages are updated using:
+
+sudo apt update
+sudo apt upgrade -y
+
+Step 5:
+Apache HTTP Server is installed using:
+
+sudo apt install apache2 -y
+
+Step 6:
+Apache service is started and verified:
+
+sudo systemctl status apache2
+
+Step 7:
+Custom HTML webpage is created and stored in:
+
+/var/www/html/index.html
+
+Step 8:
+Apache serves the webpage through Port 80.
+
+Step 9:
+Users access the website using the EC2 Public IPv4 Address.
+
+REQUEST FLOW
+------------
+
+User Browser
+      |
+      V
+Internet
+      |
+      V
+AWS EC2 Instance (Ubuntu Linux)
+      |
+      V
+Apache HTTP Server
+      |
+      V
+index.html
+      |
+      V
+Website Response
+      |
+      V
+User Browser
+
+TECHNOLOGIES USED
+-----------------
+
+• Amazon Web Services (AWS)
+• Amazon EC2
+• Ubuntu Linux
+• Apache HTTP Server
+• SSH
+• HTML
+• Security Groups
+• Public IPv4 Address
+
+PROJECT OUTCOME
+---------------
+
+A Linux-based web server was successfully deployed on AWS EC2. Apache HTTP Server was configured to host a custom HTML webpage, which became accessible to users over the internet through the instance's Public IPv4 Address.
