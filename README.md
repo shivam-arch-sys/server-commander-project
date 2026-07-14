@@ -60,7 +60,8 @@ index.html
 
 The EC2 instance was launched using Ubuntu Linux and configured with a public IP address.
 
-![EC2 Instance](screenshots/01-ec2-instance-running.png)
+![EC2 Instance]
+<img width="1470" height="832" alt="Screenshot 2026-07-15 at 12 00 31 AM" src="https://github.com/user-attachments/assets/10b3a0a3-7c2a-405f-bb90-9d9c2ffabd36" />
 
 ---
 
@@ -72,7 +73,8 @@ Secure Shell (SSH) was used to remotely access the Ubuntu server.
 ssh -i key.pem ubuntu@PUBLIC_IP
 ```
 
-![SSH Connection](screenshots/02-ssh-connection.png)
+![SSH Connection]
+<img width="1470" height="956" alt="Screenshot 2026-07-14 at 11 48 25 PM" src="https://github.com/user-attachments/assets/6ac10469-19b2-4c4a-8257-97ca10e63ae0" />
 
 ---
 
@@ -85,7 +87,8 @@ sudo apt update
 sudo apt install apache2 -y
 ```
 
-![Apache Installation](screenshots/03-apache-installation.png)
+![Apache Installation]
+<img width="1470" height="831" alt="Screenshot 2026-07-14 at 11 48 58 PM" src="https://github.com/user-attachments/assets/dabddf88-ed62-4fc4-b769-d6a11955de4d" />
 
 ---
 
@@ -100,7 +103,8 @@ ls -la
 
 The default index.html file was edited with custom HTML code.
 
-![Website Files](screenshots/04-website-files.png)
+![Website Files]
+<img width="1470" height="830" alt="Screenshot 2026-07-15 at 12 14 08 AM" src="https://github.com/user-attachments/assets/945f9c96-4b56-4c1f-9145-defabc9bdcf8" />
 
 ---
 
@@ -118,7 +122,8 @@ Status:
 active (running)
 ```
 
-![Apache Status](screenshots/05-apache-status.png)
+![Apache Status]
+<img width="1165" height="333" alt="Screenshot 2026-07-14 at 11 57 18 PM" src="https://github.com/user-attachments/assets/eba5bb01-55a1-440b-8473-5849092383e1" />
 
 ---
 
@@ -126,7 +131,8 @@ active (running)
 
 The custom webpage was successfully deployed and accessed through the EC2 Public IPv4 Address.
 
-![Website Output](screenshots/06-website-output.png)
+![Website Output]
+<img width="1470" height="838" alt="Screenshot 2026-07-14 at 11 49 45 PM" src="https://github.com/user-attachments/assets/4cdad3ce-6262-463d-8bfa-603e1e1bacae" />
 
 ---
 
