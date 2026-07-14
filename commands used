@@ -1,0 +1,54 @@
+# Commands Used in Project
+
+## Update System
+
+```bash
+sudo apt update
+sudo apt upgrade -y
+```
+
+## Install Apache
+
+```bash
+sudo apt install apache2 -y
+```
+
+## Check Apache Status
+
+```bash
+sudo systemctl status apache2
+```
+
+## Navigate to Web Directory
+
+```bash
+cd /var/www/html
+```
+
+## List Files
+
+```bash
+ls
+```
+
+```bash
+ls -la
+```
+
+## Change File Permissions
+
+```bash
+sudo chmod 777 index.html
+```
+
+## Edit HTML File
+
+```bash
+nano index.html
+```
+
+## Restart Apache
+
+```bash
+sudo systemctl restart apache2
+```
